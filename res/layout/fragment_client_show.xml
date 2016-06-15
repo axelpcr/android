@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <RelativeLayout
+            android:id="@+id/client_data_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp" >
+            <TextView
+                android:id="@+id/client_adress_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/client_adress_label"/>
+            <TextView
+                android:id="@+id/client_adress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/client_adress_label" />
+            <TextView
+                android:id="@+id/client_login_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/client_adress"
+                android:text="@string/user_login_label"/>
+            <TextView
+                android:id="@+id/client_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/client_login_label" />
+            <TextView
+                android:id="@+id/client_password_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/client_login"
+                android:text="@string/user_password_label"/>
+            <TextView
+                android:id="@+id/client_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:inputType="textPassword"
+                android:layout_below="@+id/client_password_label" />
+            <TextView
+                android:id="@+id/client_firstname_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/client_password"
+                android:text="@string/user_firstname_label"/>
+            <TextView
+                android:id="@+id/client_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/client_firstname_label" />
+            <TextView
+                android:id="@+id/client_lastname_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/client_firstname"
+                android:text="@string/user_lastname_label"/>
+            <TextView
+                android:id="@+id/client_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/client_lastname_label" />
+            <TextView
+                android:id="@+id/client_createdat_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/client_lastname"
+                android:text="@string/user_createdat_label"/>
+            <TextView
+                android:id="@+id/client_createdat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/client_createdat_label" />
+            <TextView
+                android:id="@+id/client_birthdate_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/client_createdat"
+                android:text="@string/user_birthdate_label"/>
+            <TextView
+                android:id="@+id/client_birthdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/client_birthdate_label" />
+            <TextView
+                android:id="@+id/client_usergroup_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/client_birthdate"
+                android:text="@string/user_usergroup_label"/>
+            <TextView
+                android:id="@+id/client_usergroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/client_usergroup_label" />
+            <TextView
+                android:id="@+id/client_title_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/client_usergroup"
+                android:text="@string/user_title_label"/>
+            <TextView
+                android:id="@+id/client_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/client_title_label" />
+            <TextView
+                android:id="@+id/client_fullname_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/client_title"
+                android:text="@string/user_fullname_label"/>
+            <TextView
+                android:id="@+id/client_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/client_fullname_label" />
+            <TextView
+                android:id="@+id/client_friends_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/client_fullname"
+                android:text="@string/user_friends_label"/>
+            <TextView
+                android:id="@+id/client_friends"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/client_friends_label" />
+        </RelativeLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/client_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/client_not_found" />
+</RelativeLayout>

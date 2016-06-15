@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="2.5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="2.5dp"
+    android:background="@drawable/list_item_activated_background" >
+        <TextView
+            android:id="@+id/row_client_adress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" />
+        <TextView
+            android:id="@+id/row_client_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_client_adress" />
+        <TextView
+            android:id="@+id/row_client_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_below="@+id/row_client_login" />
+        <TextView
+            android:id="@+id/row_client_firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_client_password" />
+        <TextView
+            android:id="@+id/row_client_lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_client_firstname" />
+        <TextView
+            android:id="@+id/row_client_createdat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_client_lastname" />
+        <TextView
+            android:id="@+id/row_client_birthdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_client_createdat" />
+        <TextView
+            android:id="@+id/row_client_usergroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_client_birthdate" />
+        <TextView
+            android:id="@+id/row_client_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_client_usergroup" />
+        <TextView
+            android:id="@+id/row_client_fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_client_title" />
+
+</RelativeLayout>

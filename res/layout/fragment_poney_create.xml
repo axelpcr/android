@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:harmony="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView
+        android:id="@+id/poney_iomaiome1_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/poney_iomaiome1_label"/>
+    <EditText
+        android:id="@+id/poney_iomaiome1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/poney_iomaiome1_label" />
+    <TextView
+        android:id="@+id/poney_jockgfhjeys1_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/poney_iomaiome1"
+        android:text="@string/poney_jockgfhjeys1_label"/>
+    <com.jeanlui.demactor.harmony.widget.MultiEntityWidget
+        android:id="@+id/poney_jockgfhjeys1_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/poney_jockgfhjeys1_label" />
+    <TextView
+        android:id="@+id/poney_scorvbnbe1_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/poney_jockgfhjeys1_button"
+        android:text="@string/poney_scorvbnbe1_label"/>
+    <com.jeanlui.demactor.harmony.widget.SingleEntityWidget
+        android:id="@+id/poney_scorvbnbe1_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/poney_scorvbnbe1_label" />
+</RelativeLayout>

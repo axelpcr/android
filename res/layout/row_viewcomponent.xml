@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="2.5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="2.5dp"
+    android:background="@drawable/list_item_activated_background" >
+        <TextView
+            android:id="@+id/row_viewcomponent_stringfield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" />
+        <TextView
+            android:id="@+id/row_viewcomponent_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_viewcomponent_stringfield" />
+        <TextView
+            android:id="@+id/row_viewcomponent_datetime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_viewcomponent_text" />
+        <TextView
+            android:id="@+id/row_viewcomponent_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_viewcomponent_datetime" />
+        <TextView
+            android:id="@+id/row_viewcomponent_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_viewcomponent_date" />
+        <TextView
+            android:id="@+id/row_viewcomponent_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_viewcomponent_time" />
+        <TextView
+            android:id="@+id/row_viewcomponent_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_below="@+id/row_viewcomponent_login" />
+        <TextView
+            android:id="@+id/row_viewcomponent_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_viewcomponent_password" />
+        <TextView
+            android:id="@+id/row_viewcomponent_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_viewcomponent_email" />
+        <TextView
+            android:id="@+id/row_viewcomponent_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_viewcomponent_phone" />
+        <TextView
+            android:id="@+id/row_viewcomponent_zipcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_viewcomponent_city" />
+        <TextView
+            android:id="@+id/row_viewcomponent_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_viewcomponent_zipcode" />
+        <TextView
+            android:id="@+id/row_viewcomponent_bytefield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_viewcomponent_country" />
+        <TextView
+            android:id="@+id/row_viewcomponent_charfield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_viewcomponent_bytefield" />
+        <TextView
+            android:id="@+id/row_viewcomponent_shortfield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_viewcomponent_charfield" />
+        <TextView
+            android:id="@+id/row_viewcomponent_character"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_viewcomponent_shortfield" />
+        <TextView
+            android:id="@+id/row_viewcomponent_choice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_viewcomponent_character" />
+        <CheckBox
+            android:id="@+id/row_viewcomponent_booleanobject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:enabled="false"
+            android:layout_below="@+id/row_viewcomponent_choice" />
+
+</RelativeLayout>

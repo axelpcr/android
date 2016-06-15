@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:harmony="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+   <TextView
+        android:id="@+id/group_id_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/group_id_label"/>
+    <EditText
+        android:id="@+id/group_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@+id/group_id_label" />
+   <TextView
+        android:id="@+id/group_name_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/group_id"
+        android:text="@string/group_name_label"/>
+    <EditText
+        android:id="@+id/group_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/group_name_label" />
+    <TextView
+        android:id="@+id/group_comments_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/group_name"
+        android:text="@string/group_comments_label"/>
+    <com.jeanlui.demactor.harmony.widget.MultiEntityWidget
+        android:id="@+id/group_comments_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/group_comments_label" />
+</RelativeLayout>

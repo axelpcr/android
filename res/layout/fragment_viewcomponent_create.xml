@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:harmony="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView
+        android:id="@+id/viewcomponent_stringfield_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/viewcomponent_stringfield_label"/>
+    <EditText
+        android:id="@+id/viewcomponent_stringfield"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/viewcomponent_stringfield_label" />
+    <TextView
+        android:id="@+id/viewcomponent_text_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewcomponent_stringfield"
+        android:text="@string/viewcomponent_text_label"/>
+    <EditText
+        android:id="@+id/viewcomponent_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords|textAutoComplete|textMultiLine"
+        android:layout_below="@+id/viewcomponent_text_label" />
+    <TextView
+        android:id="@+id/viewcomponent_datetime_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewcomponent_text"
+        android:text="@string/viewcomponent_datetime_label"/>
+    <com.jeanlui.demactor.harmony.widget.DateTimeWidget
+        android:id="@+id/viewcomponent_datetime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewcomponent_datetime_label"
+        harmony:dateTimeWidget_dateDialogTitle="@string/viewcomponent_datetime_date_title"
+        harmony:dateTimeWidget_timeDialogTitle="@string/viewcomponent_datetime_time_title" />
+    <TextView
+        android:id="@+id/viewcomponent_date_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewcomponent_datetime"
+        android:text="@string/viewcomponent_date_label"/>
+    <com.jeanlui.demactor.harmony.widget.DateWidget
+        android:id="@+id/viewcomponent_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewcomponent_date_label"
+        harmony:dateWidget_dialogTitle="@string/viewcomponent_date_date_title" />
+    <TextView
+        android:id="@+id/viewcomponent_time_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewcomponent_date"
+        android:text="@string/viewcomponent_time_label"/>
+    <com.jeanlui.demactor.harmony.widget.TimeWidget
+        android:id="@+id/viewcomponent_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewcomponent_time_label"
+        harmony:timeWidget_dialogTitle="@string/viewcomponent_time_time_title" />
+    <TextView
+        android:id="@+id/viewcomponent_login_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewcomponent_time"
+        android:text="@string/viewcomponent_login_label"/>
+    <EditText
+        android:id="@+id/viewcomponent_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/viewcomponent_login_label" />
+    <TextView
+        android:id="@+id/viewcomponent_password_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewcomponent_login"
+        android:text="@string/viewcomponent_password_label"/>
+    <EditText
+        android:id="@+id/viewcomponent_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_below="@+id/viewcomponent_password_label" />
+    <TextView
+        android:id="@+id/viewcomponent_email_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewcomponent_password"
+        android:text="@string/viewcomponent_email_label"/>
+    <EditText
+        android:id="@+id/viewcomponent_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/viewcomponent_email_label" />
+    <TextView
+        android:id="@+id/viewcomponent_phone_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewcomponent_email"
+        android:text="@string/viewcomponent_phone_label"/>
+    <EditText
+        android:id="@+id/viewcomponent_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:layout_below="@+id/viewcomponent_phone_label" />
+    <TextView
+        android:id="@+id/viewcomponent_city_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewcomponent_phone"
+        android:text="@string/viewcomponent_city_label"/>
+    <EditText
+        android:id="@+id/viewcomponent_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/viewcomponent_city_label" />
+    <TextView
+        android:id="@+id/viewcomponent_zipcode_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewcomponent_city"
+        android:text="@string/viewcomponent_zipcode_label"/>
+    <EditText
+        android:id="@+id/viewcomponent_zipcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:layout_below="@+id/viewcomponent_zipcode_label" />
+    <TextView
+        android:id="@+id/viewcomponent_country_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewcomponent_zipcode"
+        android:text="@string/viewcomponent_country_label"/>
+    <EditText
+        android:id="@+id/viewcomponent_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/viewcomponent_country_label" />
+    <TextView
+        android:id="@+id/viewcomponent_bytefield_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewcomponent_country"
+        android:text="@string/viewcomponent_bytefield_label"/>
+    <EditText
+        android:id="@+id/viewcomponent_bytefield"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@+id/viewcomponent_bytefield_label" />
+    <TextView
+        android:id="@+id/viewcomponent_charfield_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewcomponent_bytefield"
+        android:text="@string/viewcomponent_charfield_label"/>
+    <EditText
+        android:id="@+id/viewcomponent_charfield"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/viewcomponent_charfield_label" />
+    <TextView
+        android:id="@+id/viewcomponent_shortfield_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewcomponent_charfield"
+        android:text="@string/viewcomponent_shortfield_label"/>
+    <EditText
+        android:id="@+id/viewcomponent_shortfield"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@+id/viewcomponent_shortfield_label" />
+    <TextView
+        android:id="@+id/viewcomponent_character_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewcomponent_shortfield"
+        android:text="@string/viewcomponent_character_label"/>
+    <EditText
+        android:id="@+id/viewcomponent_character"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/viewcomponent_character_label" />
+    <TextView
+        android:id="@+id/viewcomponent_choice_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewcomponent_character"
+        android:text="@string/viewcomponent_choice_label"/>
+    <com.jeanlui.demactor.harmony.widget.EnumSpinner
+        android:id="@+id/viewcomponent_choice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewcomponent_choice_label" />
+    <TextView
+        android:id="@+id/viewcomponent_booleanobject_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewcomponent_choice"
+        android:text="@string/viewcomponent_booleanobject_label"/>
+    <CheckBox
+        android:id="@+id/viewcomponent_booleanobject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewcomponent_booleanobject_label" />
+</RelativeLayout>

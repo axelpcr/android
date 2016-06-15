@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:harmony="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+   <TextView
+        android:id="@+id/score_monefghfgy1_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/score_monefghfgy1_label"/>
+    <EditText
+        android:id="@+id/score_monefghfgy1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@+id/score_monefghfgy1_label" />
+    <TextView
+        android:id="@+id/score_ponrtyeys1_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/score_monefghfgy1"
+        android:text="@string/score_ponrtyeys1_label"/>
+    <com.jeanlui.demactor.harmony.widget.MultiEntityWidget
+        android:id="@+id/score_ponrtyeys1_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/score_ponrtyeys1_label" />
+    <TextView
+        android:id="@+id/score_useghhnrs1_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/score_ponrtyeys1_button"
+        android:text="@string/score_useghhnrs1_label"/>
+    <com.jeanlui.demactor.harmony.widget.MultiEntityWidget
+        android:id="@+id/score_useghhnrs1_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/score_useghhnrs1_label" />
+</RelativeLayout>

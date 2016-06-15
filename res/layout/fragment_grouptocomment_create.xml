@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:harmony="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView
+        android:id="@+id/grouptocomment_id_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/grouptocomment_id_label"/>
+    <EditText
+        android:id="@+id/grouptocomment_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@+id/grouptocomment_id_label" />
+    <TextView
+        android:id="@+id/grouptocomment_displayname_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grouptocomment_id"
+        android:text="@string/grouptocomment_displayname_label"/>
+    <EditText
+        android:id="@+id/grouptocomment_displayname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/grouptocomment_displayname_label" />
+    <TextView
+        android:id="@+id/grouptocomment_group_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grouptocomment_displayname"
+        android:text="@string/grouptocomment_group_label"/>
+    <com.jeanlui.demactor.harmony.widget.SingleEntityWidget
+        android:id="@+id/grouptocomment_group_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grouptocomment_group_label" />
+</RelativeLayout>

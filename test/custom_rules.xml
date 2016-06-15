@@ -1,0 +1,4 @@
+<project name="demactor-test-custom" default="help">
+    <property name="tested.manifest.package" value="com.jeanlui.demactor" />
+    <import file="build.rules.xml"/>
+</project>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:harmony="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+   <TextView
+        android:id="@+id/client_adress_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/client_adress_label"/>
+    <EditText
+        android:id="@+id/client_adress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/client_adress_label" />
+   <TextView
+        android:id="@+id/client_login_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/client_adress"
+        android:text="@string/user_login_label"/>
+    <EditText
+        android:id="@+id/client_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/client_login_label" />
+   <TextView
+        android:id="@+id/client_password_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/client_login"
+        android:text="@string/user_password_label"/>
+    <EditText
+        android:id="@+id/client_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_below="@+id/client_password_label" />
+   <TextView
+        android:id="@+id/client_firstname_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/client_password"
+        android:text="@string/user_firstname_label"/>
+    <EditText
+        android:id="@+id/client_firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/client_firstname_label" />
+   <TextView
+        android:id="@+id/client_lastname_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/client_firstname"
+        android:text="@string/user_lastname_label"/>
+    <EditText
+        android:id="@+id/client_lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/client_lastname_label" />
+   <TextView
+        android:id="@+id/client_createdat_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/client_lastname"
+        android:text="@string/user_createdat_label"/>
+    <com.jeanlui.demactor.harmony.widget.DateTimeWidget
+        android:id="@+id/client_createdat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/client_createdat_label"
+        harmony:dateTimeWidget_dateDialogTitle="@string/user_createdat_date_title"
+        harmony:dateTimeWidget_timeDialogTitle="@string/user_createdat_time_title" />
+   <TextView
+        android:id="@+id/client_birthdate_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/client_createdat"
+        android:text="@string/user_birthdate_label"/>
+    <com.jeanlui.demactor.harmony.widget.DateWidget
+        android:id="@+id/client_birthdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/client_birthdate_label"
+        harmony:dateWidget_dialogTitle="@string/user_birthdate_date_title" />
+    <TextView
+        android:id="@+id/client_usergroup_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/client_birthdate"
+        android:text="@string/user_usergroup_label"/>
+    <com.jeanlui.demactor.harmony.widget.SingleEntityWidget
+        android:id="@+id/client_usergroup_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/client_usergroup_label" />
+   <TextView
+        android:id="@+id/client_title_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/client_usergroup_button"
+        android:text="@string/user_title_label"/>
+    <com.jeanlui.demactor.harmony.widget.EnumSpinner
+        android:id="@+id/client_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/client_title_label" />
+    <TextView
+        android:id="@+id/client_friends_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/client_title"
+        android:text="@string/user_friends_label"/>
+    <com.jeanlui.demactor.harmony.widget.MultiEntityWidget
+        android:id="@+id/client_friends_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/client_friends_label" />
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:harmony="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+   <TextView
+        android:id="@+id/comment_id_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/comment_id_label"/>
+    <EditText
+        android:id="@+id/comment_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@+id/comment_id_label" />
+   <TextView
+        android:id="@+id/comment_content_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comment_id"
+        android:text="@string/comment_content_label"/>
+    <EditText
+        android:id="@+id/comment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords|textAutoComplete|textMultiLine"
+        android:layout_below="@+id/comment_content_label" />
+    <TextView
+        android:id="@+id/comment_owner_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comment_content"
+        android:text="@string/comment_owner_label"/>
+    <com.jeanlui.demactor.harmony.widget.SingleEntityWidget
+        android:id="@+id/comment_owner_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comment_owner_label" />
+    <TextView
+        android:id="@+id/comment_post_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comment_owner_button"
+        android:text="@string/comment_post_label"/>
+    <com.jeanlui.demactor.harmony.widget.SingleEntityWidget
+        android:id="@+id/comment_post_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comment_post_label" />
+   <TextView
+        android:id="@+id/comment_createdat_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comment_post_button"
+        android:text="@string/comment_createdat_label"/>
+    <com.jeanlui.demactor.harmony.widget.DateTimeWidget
+        android:id="@+id/comment_createdat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comment_createdat_label"
+        harmony:dateTimeWidget_dateDialogTitle="@string/comment_createdat_date_title"
+        harmony:dateTimeWidget_timeDialogTitle="@string/comment_createdat_time_title" />
+   <TextView
+        android:id="@+id/comment_validate_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comment_createdat"
+        android:text="@string/comment_validate_label"/>
+    <CheckBox
+        android:id="@+id/comment_validate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comment_validate_label" />
+    <TextView
+        android:id="@+id/comment_groups_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comment_validate"
+        android:text="@string/comment_groups_label"/>
+    <com.jeanlui.demactor.harmony.widget.MultiEntityWidget
+        android:id="@+id/comment_groups_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comment_groups_label" />
+</RelativeLayout>

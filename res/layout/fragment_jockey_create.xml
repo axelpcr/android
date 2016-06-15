@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:harmony="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView
+        android:id="@+id/jockey_dfdfgdddfgdfg_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/jockey_dfdfgdddfgdfg_label"/>
+    <EditText
+        android:id="@+id/jockey_dfdfgdddfgdfg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/jockey_dfdfgdddfgdfg_label" />
+    <TextView
+        android:id="@+id/jockey_dfgdfgdfgdffg_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jockey_dfdfgdddfgdfg"
+        android:text="@string/jockey_dfgdfgdfgdffg_label"/>
+    <EditText
+        android:id="@+id/jockey_dfgdfgdfgdffg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/jockey_dfgdfgdfgdffg_label" />
+    <TextView
+        android:id="@+id/jockey_dzerzerbcze_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jockey_dfgdfgdfgdffg"
+        android:text="@string/jockey_dzerzerbcze_label"/>
+    <com.jeanlui.demactor.harmony.widget.MultiEntityWidget
+        android:id="@+id/jockey_dzerzerbcze_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jockey_dzerzerbcze_label" />
+    <TextView
+        android:id="@+id/jockey_iuytrezba_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jockey_dzerzerbcze_button"
+        android:text="@string/jockey_iuytrezba_label"/>
+    <com.jeanlui.demactor.harmony.widget.SingleEntityWidget
+        android:id="@+id/jockey_iuytrezba_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jockey_iuytrezba_label" />
+</RelativeLayout>

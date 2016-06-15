@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <RelativeLayout
+            android:id="@+id/grouptocomment_data_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp" >
+            <TextView
+                android:id="@+id/grouptocomment_id_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/grouptocomment_id_label"/>
+            <TextView
+                android:id="@+id/grouptocomment_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/grouptocomment_id_label" />
+            <TextView
+                android:id="@+id/grouptocomment_displayname_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/grouptocomment_id"
+                android:text="@string/grouptocomment_displayname_label"/>
+            <TextView
+                android:id="@+id/grouptocomment_displayname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/grouptocomment_displayname_label" />
+            <TextView
+                android:id="@+id/grouptocomment_group_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/grouptocomment_displayname"
+                android:text="@string/grouptocomment_group_label"/>
+            <TextView
+                android:id="@+id/grouptocomment_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/grouptocomment_group_label" />
+        </RelativeLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/grouptocomment_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/grouptocomment_not_found" />
+</RelativeLayout>

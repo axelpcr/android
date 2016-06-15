@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:harmony="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+   <TextView
+        android:id="@+id/post_title_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/post_title_label"/>
+    <EditText
+        android:id="@+id/post_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/post_title_label" />
+   <TextView
+        android:id="@+id/post_content_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/post_title"
+        android:text="@string/post_content_label"/>
+    <EditText
+        android:id="@+id/post_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords|textAutoComplete|textMultiLine"
+        android:layout_below="@+id/post_content_label" />
+    <TextView
+        android:id="@+id/post_owner_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/post_content"
+        android:text="@string/post_owner_label"/>
+    <com.jeanlui.demactor.harmony.widget.SingleEntityWidget
+        android:id="@+id/post_owner_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/post_owner_label" />
+    <TextView
+        android:id="@+id/post_comments_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/post_owner_button"
+        android:text="@string/post_comments_label"/>
+    <com.jeanlui.demactor.harmony.widget.MultiEntityWidget
+        android:id="@+id/post_comments_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/post_comments_label" />
+    <TextView
+        android:id="@+id/post_groups_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/post_comments_button"
+        android:text="@string/post_groups_label"/>
+    <com.jeanlui.demactor.harmony.widget.MultiEntityWidget
+        android:id="@+id/post_groups_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/post_groups_label" />
+   <TextView
+        android:id="@+id/post_createdat_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/post_groups_button"
+        android:text="@string/post_createdat_label"/>
+    <com.jeanlui.demactor.harmony.widget.DateTimeWidget
+        android:id="@+id/post_createdat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/post_createdat_label"
+        harmony:dateTimeWidget_dateDialogTitle="@string/post_createdat_date_title"
+        harmony:dateTimeWidget_timeDialogTitle="@string/post_createdat_time_title" />
+   <TextView
+        android:id="@+id/post_updatedat_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/post_createdat"
+        android:text="@string/post_updatedat_label"/>
+    <com.jeanlui.demactor.harmony.widget.DateTimeWidget
+        android:id="@+id/post_updatedat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/post_updatedat_label"
+        harmony:dateTimeWidget_dateDialogTitle="@string/post_updatedat_date_title"
+        harmony:dateTimeWidget_timeDialogTitle="@string/post_updatedat_time_title" />
+   <TextView
+        android:id="@+id/post_expiresat_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/post_updatedat"
+        android:text="@string/post_expiresat_label"/>
+    <com.jeanlui.demactor.harmony.widget.DateTimeWidget
+        android:id="@+id/post_expiresat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/post_expiresat_label"
+        harmony:dateTimeWidget_dateDialogTitle="@string/post_expiresat_date_title"
+        harmony:dateTimeWidget_timeDialogTitle="@string/post_expiresat_time_title" />
+</RelativeLayout>

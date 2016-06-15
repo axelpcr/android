@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <RelativeLayout
+            android:id="@+id/post_data_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp" >
+            <TextView
+                android:id="@+id/post_title_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/post_title_label"/>
+            <TextView
+                android:id="@+id/post_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/post_title_label" />
+            <TextView
+                android:id="@+id/post_content_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/post_title"
+                android:text="@string/post_content_label"/>
+            <TextView
+                android:id="@+id/post_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/post_content_label" />
+            <TextView
+                android:id="@+id/post_owner_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/post_content"
+                android:text="@string/post_owner_label"/>
+            <TextView
+                android:id="@+id/post_owner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/post_owner_label" />
+            <TextView
+                android:id="@+id/post_comments_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/post_owner"
+                android:text="@string/post_comments_label"/>
+            <TextView
+                android:id="@+id/post_comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/post_comments_label" />
+            <TextView
+                android:id="@+id/post_groups_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/post_comments"
+                android:text="@string/post_groups_label"/>
+            <TextView
+                android:id="@+id/post_groups"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/post_groups_label" />
+            <TextView
+                android:id="@+id/post_createdat_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/post_groups"
+                android:text="@string/post_createdat_label"/>
+            <TextView
+                android:id="@+id/post_createdat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/post_createdat_label" />
+            <TextView
+                android:id="@+id/post_updatedat_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/post_createdat"
+                android:text="@string/post_updatedat_label"/>
+            <TextView
+                android:id="@+id/post_updatedat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/post_updatedat_label" />
+            <TextView
+                android:id="@+id/post_expiresat_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/post_updatedat"
+                android:text="@string/post_expiresat_label"/>
+            <TextView
+                android:id="@+id/post_expiresat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/post_expiresat_label" />
+        </RelativeLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/post_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/post_not_found" />
+</RelativeLayout>

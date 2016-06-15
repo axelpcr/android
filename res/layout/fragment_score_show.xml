@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <RelativeLayout
+            android:id="@+id/score_data_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp" >
+            <TextView
+                android:id="@+id/score_monefghfgy1_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/score_monefghfgy1_label"/>
+            <TextView
+                android:id="@+id/score_monefghfgy1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/score_monefghfgy1_label" />
+            <TextView
+                android:id="@+id/score_ponrtyeys1_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/score_monefghfgy1"
+                android:text="@string/score_ponrtyeys1_label"/>
+            <TextView
+                android:id="@+id/score_ponrtyeys1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/score_ponrtyeys1_label" />
+            <TextView
+                android:id="@+id/score_useghhnrs1_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/score_ponrtyeys1"
+                android:text="@string/score_useghhnrs1_label"/>
+            <TextView
+                android:id="@+id/score_useghhnrs1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/score_useghhnrs1_label" />
+        </RelativeLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/score_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/score_not_found" />
+</RelativeLayout>

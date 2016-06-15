@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:harmony="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+   <TextView
+        android:id="@+id/hiddenentity_id_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hiddenentity_id_label"/>
+    <EditText
+        android:id="@+id/hiddenentity_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@+id/hiddenentity_id_label" />
+   <TextView
+        android:id="@+id/hiddenentity_content_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hiddenentity_id"
+        android:text="@string/hiddenentity_content_label"/>
+    <EditText
+        android:id="@+id/hiddenentity_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/hiddenentity_content_label" />
+</RelativeLayout>
